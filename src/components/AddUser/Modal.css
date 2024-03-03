@@ -1,0 +1,112 @@
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+.modal {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 90%; /* Adapt to screen size */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative; /* For positioning the close button */
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.5rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #666; /* Subtle color */
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.form-field label {
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.form-field input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-error {
+  color: #d9534f; /* Bootstrap's `btn-danger` color */
+  margin-top: 5px;
+  font-size: 0.875em;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btn:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.btn.form-btn {
+  width: auto; /* Auto-width based on content */
+  margin-top: 20px;
+}
+
+.cancel__btn {
+  background-color: #6c757d; /* Bootstrap's `btn-secondary` color */
+  margin-left: 10px;
+}
+.form-field {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  gap: 10px; /* Space between label, input, and error message */
+  margin-bottom: 15px;
+}
+
+.form-field label {
+  width: 100px; /* Fixed width for labels */
+}
+
+.form-field input {
+  flex-grow: 1; /* Input fields take up remaining space */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-error {
+  color: #d9534f;
+  margin-left: 10px; /* Ensure some space between the input and error message */
+  font-size: 0.875em;
+}
+
+/* Adjust the button styles if needed */
+.btn.form-btn {
+  padding: 10px 15px;
+  margin-top: 20px;
+  align-self: flex-start; /* Align submit button to the start of the flex container */
+}

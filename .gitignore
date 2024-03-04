@@ -1,8 +1,7 @@
-
-# dependencies
+# compiled output
+/dist
 /node_modules
 
-# production
-/build
+# Logs
 
-
+.env
